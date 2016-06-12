@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--选中的时候效果-->
+    <item android:state_selected="true" android:drawable="@drawable/air_price_down" />
+    <item android:state_selected="false" android:drawable="@drawable/air_price_normal" />
+
+    <!--默认的时候效果-->
+    <item android:drawable="@drawable/air_price_normal" />
+</selector>

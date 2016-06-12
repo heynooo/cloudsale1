@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="264px"
+              android:background="@drawable/delete_dialog"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68px"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_change_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:gravity="center"
+            android:text="修改名称"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/tv_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_box_selected"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/pwd_grey"
+            android:textSize="17.0sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="5px"
+            android:layout_weight="0.5"
+            android:id="@+id/tv_change_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@drawable/selector_delete_dialog_left"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@drawable/selector_dialog_text"
+            android:textSize="18.0sp"/>
+
+        <TextView
+            android:layout_marginRight="5px"
+            android:layout_weight="0.5"
+            android:id="@+id/tv_change_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@drawable/selector_delete_dialog_right"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@drawable/selector_dialog_text"
+            android:textSize="18.0sp"/>
+    </LinearLayout>
+</LinearLayout>

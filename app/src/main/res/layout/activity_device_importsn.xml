@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/base_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f0f0f0"
+    >
+
+
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!--标签-->
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+
+            <com.vanhitech.vanhitech.zxing.SnEdittext
+                android:layout_gravity="center"
+                android:layout_height="95px"
+                android:layout_marginLeft="95px"
+                android:layout_marginRight="95px"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/item_listview_home"
+                android:gravity="center_vertical"
+                android:id="@+id/item_homelist_name"
+                android:hint="请输入设备的SN"
+                android:capitalize= "characters"
+                style="@style/edittext_style"
+                />
+        <!--android:textColorHint="#d2d2d2"-->
+        <!--android:textSize="18dp"-->
+
+    <Button
+        android:id="@+id/btn_gdevice_add"
+        style="@style/bg_bt_style"
+        android:layout_marginTop="36dp"
+        android:textSize="18dp"
+        android:background="@drawable/bg_bt"
+        android:text="添加"/>
+
+
+</LinearLayout>

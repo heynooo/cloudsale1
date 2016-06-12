@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff0f0f0"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <!-- 标题栏 -->
+        <include layout="@layout/base_ativity_head"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="838.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75.0"/>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="385.0"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="65.0"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="路由器名字"
+                            android:textColor="#ffb1b1b1"
+                            android:textSize="18.0sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="72.0"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <EditText
+                            android:id="@+id/et_routerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/config_device_input_box"
+                            android:ellipsize="end"
+                            android:paddingLeft="10.0dip"
+                            android:singleLine="true"
+                            android:textColor="#ffa2a2a2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="63.0"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="路由器密码"
+                            android:textColor="#ffb1b1b1"
+                            android:textSize="18.0sp"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="72.0"
+                        android:background="@drawable/config_device_input_box">
+                        <EditText
+                            android:id="@+id/login_et_password"
+                            style="@style/edittext_style"
+                            android:hint="设置密码"
+                            android:password="true"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/cb_is_visible"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:layout_alignBottom="@+id/login_et_password"
+                            android:button="@null"
+                            android:layout_alignEnd="@+id/login_et_password"
+                            android:layout_alignRight="@+id/login_et_password"
+                            android:background="@drawable/regsiter_checkbox"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="60.0"
+                        android:background="@drawable/set_bg"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备所在房间"
+                            android:textColor="#ffb1b1b1"
+                            android:textSize="18.0sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iv_device_control_right_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="72.0"
+                        android:background="@drawable/config_device_input_box"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_device_control_center_control_name"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_weight="1.0"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="房间名称"
+                            android:textColor="#ffb1b1b1"
+                            android:textSize="20.0sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingBottom="5.0dip"
+                            android:paddingRight="10.0dip"
+                            android:src="@drawable/selector_room_arrow"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="60.0"
+                        android:background="@drawable/set_bg"/>
+
+                    <Button
+                        android:id="@+id/btn_config"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/btn_config"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="配置"
+                        android:textColor="#ffffffff"
+                        android:textSize="20.0sp"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="305.0"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lin_config_wifi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="217.0"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.0dip"
+                                android:layout_weight="63.0"/>
+
+                            <ImageView
+                                android:id="@+id/img_config_wifi_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_config_wifi_icon"/>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.0dip"
+                                android:layout_weight="63.0"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="设备指示灯由慢闪变为常亮即配置成功"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_weight="78.0"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75.0"
+                    android:orientation="vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<!--覆盖层 密码-->
+    <LinearLayout
+        android:id="@+id/lin_board"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <include layout="@layout/base_ativity_head"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="838.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75.0"/>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="385.0"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_marginLeft="60.0dip"
+                        android:layout_weight="200.0"
+                        android:focusableInTouchMode="true">
+
+                        <Button
+                            android:id="@+id/btn_router_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10.0dip"
+                            android:background="@drawable/img_config_bubble_up"
+                            android:clickable="false"
+                            android:paddingBottom="10.0dip"
+                            android:text="输入\n路由器密码"
+                            android:textColor="#ffffffff"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="72.0"
+                        android:background="@drawable/config_device_input_box">
+                        <EditText
+                            android:id="@+id/login_et_password1"
+                            style="@style/edittext_style"
+                            android:hint="设置密码"
+                            android:password="true"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/cb_is_visible1"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:layout_alignBottom="@+id/login_et_password1"
+                            android:button="@null"
+                            android:layout_alignEnd="@+id/login_et_password1"
+                            android:layout_alignRight="@+id/login_et_password1"
+                            android:background="@drawable/regsiter_checkbox"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="300.0"/>
+
+                    <TextView
+                        android:id="@+id/tv_config_next_btn"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/img_config_flash_btn"
+                        android:gravity="center"
+                        android:text="下一步"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="196.0"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75.0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+<!--覆盖层 快闪-->
+    <LinearLayout
+        android:id="@+id/rel_board"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#55000000"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!-- 标题栏 -->
+        <include layout="@layout/base_ativity_head"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="838.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="368.0"/>
+
+            <Button
+                android:id="@+id/btn_up"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60.0dip"
+                android:background="@drawable/img_config_bubble_up"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingBottom="10.0dip"
+                android:text="指示灯快闪"
+                android:textColor="#ffffffff"
+                android:textColorHint="#ffffffff"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/flash_ball"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5.0dip"
+                android:src="@drawable/img_config_flash_ball"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_horizontal"
+                android:text="长按设备按钮即可让指示灯进入快速模式\n并确保手机处于wifi连接状态"
+                android:textColor="#ffffffff"/>
+
+            <TextView
+                android:id="@+id/tv_config_flash_btn"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/img_config_flash_btn"
+                android:gravity="center"
+                android:text="已连接已快闪"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

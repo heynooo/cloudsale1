@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/base_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_gravity="center"
+        android:background="#39A1E8"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <com.vanhitech.vanhitech.views.CurtainView
+            android:id="@+id/myview_lete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.vanhitech.vanhitech.views.CurtainView
+            android:id="@+id/myview_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/leaf_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/leaf_l2"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/leaf_l3"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/leaf_l4"
+            android:layout_marginLeft="105dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/leaf_l5"
+            android:layout_marginLeft="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/leaf_r1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/leaf_r2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/leaf_r3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/leaf_r4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="105dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/leaf_r5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="80px"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_cuttain_close"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_curtain_close"
+                android:text=""
+                android:button="@null"/>
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curtain_close"
+                android:textColor="#BBC8D4"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cb_cuttain_open"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_curtain_open"
+                android:text=""
+                android:button="@null"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curtain_open"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <CheckBox
+            android:id="@+id/cb_cuttain_pause"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:background="@drawable/button_curtain_pause"
+            android:text=""
+            android:button="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/curtain_pause"
+            android:textColor="#BBC8D4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/cb_is_deviceinfo"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_info"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_timing"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/selector_btn_air_info"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                android:textColor="#BBC8D4"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

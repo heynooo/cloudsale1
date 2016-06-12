@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/air"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f0f0f0"
+              android:orientation="vertical">
+
+
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!--标签-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test"
+            />
+        <CheckBox
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:button="@null"
+
+            android:background="@drawable/scener_clean"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/test1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--<ListView-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="26dp"-->
+            <!--android:dividerHeight="38px"-->
+            <!--android:id="@+id/scener_add_device_list"-->
+            <!--android:layout_width="659px"-->
+            <!--android:layout_height="wrap_content"></ListView>-->
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/test4"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:paddingLeft="60px"
+            android:text="@string/rgb"
+            android:textColor="@color/set_view_tv_grey"
+            android:textSize="@dimen/text_size_s"/>
+
+        <com.vanhitech.vanhitech.views.GetRGBView
+            android:id="@+id/test_getColorV"
+            android:layout_width="fill_parent"
+            android:layout_height="180px"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/rgb_pix"
+            >
+        </com.vanhitech.vanhitech.views.GetRGBView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scener_ll_brightness"
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="111px"
+            android:layout_height="96px"
+            android:gravity="center"
+            android:text="亮度"
+            android:textColor="#AEBECC"
+            android:textSize="30px"/>
+
+        <SeekBar
+            android:id="@+id/test_seek_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="330"
+            android:max="100"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@mipmap/img_seekbar_boll"
+            android:thumbOffset="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

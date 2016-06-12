@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="602px"
+        android:layout_height="120px"
+        android:gravity="center"
+        android:background="@null"
+        android:orientation="horizontal"
+        >
+        <!--android:background="@drawable/light_timer_more"-->
+        <LinearLayout
+            android:layout_width="125px"
+            android:gravity="center"
+            android:layout_height="105px">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/scener_tv"
+                android:text="1路"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="195px"
+            android:layout_height="105px">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125px"
+            android:gravity="center"
+            android:layout_height="105px">
+            <Button
+                android:id="@+id/scener_bt_open"
+                android:layout_width="93px"
+                android:layout_height="93px"
+                android:background="@drawable/scene_btn"
+                android:text="开"
+                />
+                <!--android:focusable="false"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125px"
+            android:gravity="center"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_height="105px">
+            <Button
+                android:id="@+id/scener_bt_close"
+                android:layout_width="93px"
+                android:layout_height="93px"
+                android:background="@drawable/scene_btn"
+                android:focusable="false"
+                android:text="关"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scener_parting"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@mipmap/pop_scener_parting"
+        android:layout_height="2px">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1px"
+        android:gravity="bottom"
+        android:layout_gravity="center"
+        android:layout_width="602px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scemer_tv_left"
+            android:layout_width="301px"
+            android:layout_height="88px"
+            android:background="@drawable/selector_delete_dialog_left"
+            android:gravity="center"
+            android:text="取消"
+            android:visibility="gone"
+            android:textColor="@drawable/selector_dialog_text"
+            android:textSize="18.0sp"/>
+
+        <TextView
+            android:id="@+id/scemer_tv_right"
+            android:layout_width="301px"
+            android:layout_height="88px"
+            android:visibility="gone"
+            android:background="@drawable/selector_delete_dialog_right"
+            android:textColor="@drawable/selector_dialog_text"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="18.0sp"/>
+    </LinearLayout>
+
+</LinearLayout>

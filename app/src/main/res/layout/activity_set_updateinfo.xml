@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/base_activity"
+
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_marginTop="28px"
+            android:text="用户名"
+            android:layout_weight="1"
+            style="@style/text_help"
+            />
+
+        <EditText
+            android:id="@+id/tv_username"
+            android:layout_marginTop="28px"
+            android:layout_weight="3"
+            style="@style/editText_update_set"
+            android:hint="用户名用于登录APP"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="28px"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:text="邮箱地址"
+            android:layout_weight="1"
+            style="@style/text_help"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_weight="3"
+            android:layout_marginTop="28px"
+            style="@style/editText_update_set"
+            android:hint="邮箱用于找回密码"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

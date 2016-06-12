@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/base_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f0f0f0"
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!--标签-->
+    <com.vanhitech.vanhitech.SwipeMenulistview.PullToRefreshSwipeMenuListView
+
+        android:id="@+id/scener_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="5dp"
+        android:dividerHeight="38px"
+        android:listSelector="#00000000">
+
+    </com.vanhitech.vanhitech.SwipeMenulistview.PullToRefreshSwipeMenuListView>
+
+    <LinearLayout
+        android:id="@+id/scenerdevice_ll_addmode"
+        android:visibility="gone"
+        android:layout_gravity="center|bottom"
+        android:gravity="center|bottom"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0px">
+        <Button
+            android:layout_gravity="top"
+            android:id="@+id/scenerdevice_addmode_bt"
+            android:layout_width="77px"
+            android:layout_height="77px"
+            android:background="@drawable/selector_btn_add_timer"/>
+    </LinearLayout>
+</LinearLayout>

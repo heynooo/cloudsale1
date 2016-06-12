@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanhitech.vanhitech.views.LinearLayoutView
+    android:id="@+id/layout_logintest"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <!--android:background="@mipmap/login_bg"-->
+    <TextView
+        style="@style/title_style"
+        android:gravity="center"
+        android:text="@string/main_name"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+
+            android:id="@+id/login_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_marginTop="60px"
+                android:id="@+id/login_login"
+                android:layout_width="180px"
+                android:layout_height="128px"
+                android:layout_gravity="center"
+                android:background="@mipmap/loginlogo"/>
+
+            <TextView
+                style="@style/title_style"
+                android:layout_marginTop="20px"
+                android:text="@string/welecome"/>
+
+            <EditText
+                android:id="@+id/login_et_username"
+                style="@style/edittext_style"
+                android:layout_marginTop="26px"
+                android:hint="@string/userName"
+                />
+
+
+            <EditText
+                android:id="@+id/login_et_password"
+                style="@style/edittext_style"
+                android:layout_marginTop="34px"
+                android:hint="@string/password"
+                android:password="true"
+                />
+
+            <Button
+                android:id="@+id/btn_login_go"
+                style="@style/bg_bt_style"
+                android:background="@drawable/bg_bt"
+                android:text="@string/login"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="0px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bt_login_regsiter"
+                        style="@style/bg_text_style"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:onClick="bt_login_regsiter"
+                        android:text="@string/regist"
+                        android:textColor="@drawable/login_text_color"
+                       />
+
+                    <Button
+                        android:id="@+id/imageView2"
+                        style="@style/bg_arrow_style"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/login_arrow"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="0px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bt_login_forget"
+                        style="@style/bg_text_style"
+                        android:onClick="bt_login_forget"
+                        android:text="@string/forget_pw"
+                        android:textColor="@drawable/login_text_color"
+                        android:textSize="18dp">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/imageView"
+                        style="@style/bg_arrow_style"
+                        android:background="@drawable/login_arrow"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_marginBottom="20px"
+        android:layout_width="match_parent"
+        android:gravity="bottom|center"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/login_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27px"
+            android:text="@string/more"
+            />
+    </LinearLayout>
+</com.vanhitech.vanhitech.views.LinearLayoutView>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/scene_rgb_on"
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/scene_btn"
+                android:text="@string/timeron"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/scene_rgb_off"
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/scene_btn"
+                android:text="@string/timeroff"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:paddingLeft="60px"
+            android:text="@string/rgb"
+            android:textColor="@color/set_view_tv_grey"
+            android:textSize="@dimen/text_size_s"/>
+
+        <com.vanhitech.vanhitech.views.GetRGBView
+            android:id="@+id/getColorV"
+            android:layout_width="fill_parent"
+            android:layout_height="180px"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/rgb_pix"
+            >
+        </com.vanhitech.vanhitech.views.GetRGBView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="60px"
+            android:text="@string/bright"
+            android:textColor="@color/set_view_tv_grey"
+            android:textSize="@dimen/text_size_s"/>
+
+        <com.vanhitech.vanhitech.views.NumberSeekBar
+            android:id="@+id/scene_rgb_bright_bar"
+            style="@style/NumberProgressBar_Default"
+            android:layout_width="656px"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+
+            android:max="15"
+            android:progressDrawable="@drawable/numberseekbar_background"
+            android:thumb="@drawable/thumb_bar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="60px"
+            android:text="@string/mode"
+            android:textColor="@color/set_view_tv_grey"
+            android:textSize="@dimen/text_size_s"/>
+
+        <LinearLayout
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="60px"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/scene_rgb_left"
+                android:layout_width="100px"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="63px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/scene_left_normal"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/scene_rgb_mode"
+                android:layout_width="200px"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/viewfinder_frame"
+                android:textSize="@dimen/text_size_m"
+                />
+
+            <RelativeLayout
+                android:id="@+id/scene_rgb_right"
+                android:layout_width="100px"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="63px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/scene_right_normal"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="60px"
+            android:text="@string/speed"
+            android:textColor="@color/set_view_tv_grey"
+            android:textSize="@dimen/text_size_s"/>
+
+        <com.vanhitech.vanhitech.views.NumberSeekBar
+            android:id="@+id/scene_rgb_speed_bar"
+            style="@style/NumberProgressBar_Default"
+            android:layout_width="656px"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+
+            android:max="15"
+            android:progressDrawable="@drawable/numberseekbar_background"
+            android:thumb="@drawable/thumb_bar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scene_rgb_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_cancel"
+            android:textColor="@color/set_view_tv_grey"
+
+            android:textSize="@dimen/text_size_m"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/scene_rgb_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_ok"
+            android:textColor="@color/set_view_tv_grey"
+            android:textSize="@dimen/text_size_m"
+            >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

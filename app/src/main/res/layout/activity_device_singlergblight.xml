@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/base_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+    <LinearLayout
+        android:layout_width="665px"
+        android:layout_height="572px"
+        android:layout_gravity="center"
+        android:layout_margin="26px"
+        android:orientation="vertical"
+        >
+        <!--彩色灯 -->
+
+        <!--彩色盘+亮度-->
+        <LinearLayout
+            android:layout_width="665px"
+            android:layout_height="572px"
+            android:background="@mipmap/rgblight_background"
+            android:orientation="vertical">
+            <!--帧布局彩色盘-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="126px"
+                android:layout_marginRight="126px"
+                android:layout_marginTop="30px"
+
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/image_rgb"
+                        android:layout_width="430px"
+                        android:layout_height="430px"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rgblight_imager"
+                        />
+
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:id="@+id/cb_is_switch"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:padding="30px"
+                        android:background="@drawable/rgblight_checkbox"
+                        android:button="@null"/>
+
+                    <com.larswerkman.holocolorpicker.ColorPicker
+                        android:id="@+id/picker"
+                        android:layout_width="350px"
+                        android:layout_height="350px"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="1dp">
+
+                <TextView
+                    style="@style/text_help"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="44px"
+                    android:background="@null"
+                    android:text="亮度 "
+                    android:textSize="12dp"
+                    />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="90px">
+
+                    <SeekBar
+                        android:layout_gravity="center"
+                        android:id="@+id/LightLimitBar"
+                        style="@style/seekbar"/>
+                </LinearLayout>
+
+                <!--<com.vanhitech.vanhitech.views.NumberSeekBar-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:id="@+id/LightLimitBar"-->
+                <!--style="@style/NumberProgressBar_Default"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:focusable="false"-->
+                <!--android:max="15"-->
+                <!--android:thumb="@drawable/thumb_bar"-->
+                <!--android:progressDrawable="@drawable/numberseekbar_background"-->
+                <!--/>-->
+                <!-- padding设置无效需要在代码中设置 -->
+
+            </LinearLayout>
+
+
+            <!--自定义进度条-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="665px"
+        android:layout_height="203px"
+        android:layout_gravity="center"
+        android:background="@mipmap/statebackground"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/iv_model"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12px"
+            android:background="@drawable/light_bt_re_state"
+            android:text="模式1"
+            android:textColor="#fff"
+            android:textSize="9dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_help"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="13px"
+                android:layout_marginRight="1px"
+                android:background="@null"
+                android:text="模式速度"
+                android:textSize="12dp"
+                />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="90px">
+
+                <SeekBar
+                    android:id="@+id/LightPaceBar"
+                    style="@style/seekbar"/>
+            </LinearLayout>
+
+            <!--<com.vanhitech.vanhitech.views.NumberSeekBar-->
+
+            <!--android:id="@+id/LightPaceBar"-->
+            <!--style="@style/NumberProgressBar_Default"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:focusable="false"-->
+            <!--android:max="15"-->
+            <!--android:thumb="@drawable/thumb_bar"-->
+            <!--android:progressDrawable="@drawable/numberseekbar_background"-->
+            <!--/>-->
+            <!-- padding设置无效需要在代码中设置 -->
+
+        </LinearLayout>
+
+
+        <!--自定义进度条-->
+    </LinearLayout>
+
+
+    <!--按键-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="178px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/cb_is_remote_control"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/selector_btn_light_remote_control"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_remote_control"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_timing"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+        <!--模式速度-->
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/cb_is_deviceinfo"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_info"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

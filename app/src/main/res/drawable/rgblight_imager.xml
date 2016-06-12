@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--<item android:state_checked="true" android:drawable="@mipmap/rgblight_open" /> &lt;!&ndash; checked &ndash;&gt;-->
+
+
+    <!--<item android:state_checked="false" android:drawable="@mipmap/rgblight_closed" /> &lt;!&ndash; default &ndash;&gt;-->
+
+    <item android:state_pressed="true" android:drawable="@mipmap/rgblight_open"></item>
+    <item android:state_selected="true" android:drawable="@mipmap/rgblight_open"></item>
+    <item android:drawable="@mipmap/rgblight_closed"></item>
+
+
+</selector>

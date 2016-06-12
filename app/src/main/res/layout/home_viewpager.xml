@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/home_viewpager_id"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#F0F0EF"
+             android:clipChildren="false"
+             android:orientation="vertical"
+             android:paddingTop="0px"
+    >
+
+    <com.vanhitech.vanhitech.views.LinkedViewPager.NoScrollViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    <!--用-->
+        <!--android:layout_height="442px"-->
+    <!--<com.vanhitech.vanhitech.views.InnerViewPager-->
+    <com.vanhitech.vanhitech.views.LinkedViewPager.InnerViewPager
+        android:id="@+id/home_pager_viewpager"
+        android:layout_width="655px"
+        android:layout_marginTop="36px"
+        android:layout_gravity="center|top"
+        android:layout_height="442px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:clipChildren="false"
+        ></com.vanhitech.vanhitech.views.LinkedViewPager.InnerViewPager>
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="250dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="300dp">-->
+    <!--&lt;!&ndash;listview&ndash;&gt;-->
+    <!--<com.vanhitech.vanhitech.SwipeMenulistview.PullToRefreshSwipeMenuListView-->
+
+    <!--android:layout_margin="20dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:id="@+id/home_pager_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</com.vanhitech.vanhitech.SwipeMenulistview.PullToRefreshSwipeMenuListView>-->
+    <!--</LinearLayout>-->
+
+</FrameLayout>

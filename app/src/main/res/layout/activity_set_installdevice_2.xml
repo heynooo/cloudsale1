@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    style="@style/base_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <!--路由器名称-->
+        <LinearLayout
+            android:layout_width="527px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="92px"
+            android:layout_marginRight="92px"
+            android:layout_marginTop="20px"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                style="@style/text_help"
+                android:layout_marginTop="20px"
+                android:text="路由器名称"
+                />
+
+            <EditText
+                android:id="@+id/et_routerName"
+                style="@style/editText_update_set"
+                android:layout_marginTop="20px"
+                />
+        </LinearLayout>
+
+        <!--路由器密码-->
+        <LinearLayout
+            android:layout_width="527px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="92px"
+            android:layout_marginRight="92px"
+            android:layout_marginTop="16px"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/text_help"
+                android:text="路由器密码"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="108px"
+                android:layout_marginTop="20px">
+
+                <EditText
+                    android:id="@+id/et_router_pass"
+                    style="@style/editText_update_set"
+                    android:password="true"/>
+
+                <CheckBox
+                    android:id="@+id/cb_is_visible"
+                    android:layout_width="74px"
+                    android:layout_height="74px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="18px"
+                    android:layout_marginBottom="3px"
+                    android:layout_marginRight="12px"
+                    android:layout_marginTop="1px"
+                    android:background="@drawable/regsiter_checkbox"
+                    android:button="@null"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--设备所在的房间-->
+        <LinearLayout
+            android:layout_width="527px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="92px"
+            android:layout_marginRight="92px"
+            android:layout_marginTop="16px"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/text_help"
+                android:text="设备所在房间"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px">
+
+                <EditText
+                    android:id="@+id/et_my_edittext"
+                    style="@style/editText_update_set"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_config_addroom"
+                    android:layout_width="74px"
+                    android:layout_height="74px"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginRight="13px"
+                    android:layout_marginTop="10px"
+                    android:src="@drawable/selector_room_arrow"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--配置-->
+        <LinearLayout
+
+            android:layout_width="527px"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_help"
+                android:text=""
+                />
+
+            <Button
+                android:id="@+id/btn_config"
+                android:layout_width="match_parent"
+                android:layout_height="101px"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_bt"
+                android:text="配置"
+                android:textColor="#fff"
+                android:textSize="35px"
+                />
+
+        </LinearLayout>
+
+
+        <!--wifi-->
+        <LinearLayout
+
+            android:id="@+id/lin_config_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img_config_wifi_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_config_wifi_icon"/>
+
+
+            <ImageView
+                android:id="@+id/img_config_wifi_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_config_wifi_icon"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="设备指示灯由慢闪变为常亮即配置成功"
+                android:textColor="#a2a2a2"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

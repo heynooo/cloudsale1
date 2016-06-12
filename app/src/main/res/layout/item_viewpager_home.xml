@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="18dp"
+              android:clipChildren="false"
+              android:orientation="vertical"
+              android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/homelist_pager_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="344px"
+        android:background="@null"/>
+
+
+    <TextView
+        android:background="@mipmap/room_info_name"
+        android:id="@+id/home_pager_title"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:gravity="center"
+        android:text="设备"
+        android:textColor="#b1b1b1"
+        android:textSize="18dp"
+        />
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:textColor="#b1b1b1"-->
+    <!--<RelativeLayouts-->
+    <!--android:background="@null"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="53dp"-->
+    <!--android:layout_below="@+id/homelist_pager_imageview"-->
+    <!--android:layout_alignLeft="@+id/homelist_pager_imageview"-->
+    <!--android:layout_alignStart="@+id/homelist_pager_imageview">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/left_room_info"-->
+    <!--android:layout_marginTop="7dp"-->
+    <!--android:layout_marginLeft="7dp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/selector_bt_home_reviseroot"-->
+    <!--android:layout_width="35dp"-->
+    <!--android:layout_height="35dp"/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/home_pager_title"-->
+    <!--android:text="设备"-->
+    <!--android:textSize="18dp"-->
+    <!--android:textColor="#b1b1b1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/right_room_info"-->
+    <!--android:layout_marginTop="7dp"-->
+    <!--android:layout_marginRight="7dp"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_width="35dp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:background="@drawable/selector_bt_home_addroot"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"/>-->
+    <!--</RelativeLayouts>-->
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/item_scener_device_ll"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="654px"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="39px"
+              android:layout_marginRight="30px"
+              android:layout_marginTop="35px"
+
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@mipmap/item_listview_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="24px"
+            android:layout_width="129px"
+            android:layout_height="131px"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/scener_device_icon"
+                android:layout_width="94px"
+                android:layout_height="94px"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="407px"
+            android:layout_height="131px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="65px">
+                <TextView
+                    android:gravity="center|left"
+                    android:id="@+id/scener_device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="名字"
+                    android:textColor="#b1b1b1"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="left"
+                android:layout_width="207px"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:layout_height="65px">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/scener_device_place"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:text="客厅"
+                    android:textColor="#d2d2d2"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/scener_device_status"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:text="在线状态"
+                    android:textColor="#d2d2d2"
+                    android:textSize="12dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="121px"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                android:id="@+id/item_arrow"
+                android:layout_width="20px"
+                android:layout_height="38px"
+                android:background="@mipmap/btn_list_right_arrow"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scener_adddevice_bt"
+        android:layout_width="77px"
+        android:layout_height="77px"
+        android:layout_gravity="center"
+        android:layout_marginTop="53px"
+        android:background="@drawable/selector_btn_add_timer"
+        android:focusable="false"
+        android:visibility="gone"/>
+
+</LinearLayout>

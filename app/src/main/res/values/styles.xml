@@ -1,0 +1,288 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <!--popwindow-->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!--home普通文字-->
+
+
+    <!--android:gravity="center_vertical"-->
+
+    <style name="home_textview_size">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#b1b1b1</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+
+    <!--android:background="@drawable/timimg_checkbox"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center"-->
+    <!--定时重复cb属性-->
+    <style name="timing_cb">
+
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/timimg_checkbox</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--<CheckBox-->
+    <!--android:gravity="center"-->
+    <!--android:id="@+id/scener_cb_close"-->
+    <!--android:layout_width="93px"-->
+    <!--android:layout_height="93px"-->
+    <!--android:text="暖白"-->
+    <!--android:background="@drawable/light_scener_checkbox"-->
+    <!--android:button="@null"/>-->
+    <!--情景模式的cb-->
+    <style name="scener_cb">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">93px</item>
+        <item name="android:layout_height">93px</item>
+        <item name="android:background">@drawable/light_scener_checkbox</item>
+        <item name="android:button">@null</item>
+    </style>
+    <!--<TextView-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#AEBECC"-->
+    <!--android:text="亮度"-->
+    <!--android:textSize="30px"-->
+    <!--android:layout_width="111px"-->
+    <!--android:layout_margin="30px"-->
+        <!--<item name="android:textColor">@drawable/selector_dialog_text</item>-->
+    <!--android:layout_height="96px"/>-->
+    <!--情景模式的textview-->
+    <style name="scener_tv">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#AEBECC</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:layout_margin">30px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="title_style">
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#f0f0f0"-->
+    <!--android:orientation="vertical"-->
+
+    <!--基类avtivity背景-->
+    <style name="base_activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#f0f0f0</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--辅助文字标签-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="旧密码"-->
+    <!--android:textSize="18dp"-->
+    <!--android:textColor="#a2a2a2"-->
+    <!--android:layout_weight="1"-->
+    <style name="text_help">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#a2a2a2</item>
+        <item name="android:background">#f0f0f0</item>
+
+    </style>
+    <!--设置框样式-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@mipmap/deploy_importing_box"-->
+    <!--android:layout_weight="3"-->
+
+    <style name="editText_update_set">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_width">527px</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_height">101px</item>
+        <item name="android:textColor">#a2a2a2</item>
+        <item name="android:background">@mipmap/deploy_importing_box</item>
+        <item name="android:textColorHint">#b1b1b1</item>
+    </style>
+
+
+    <!--android:padding="10dp-->
+
+    <style name="edittext_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">34px</item>
+        <item name="android:layout_width">530px</item>
+        <item name="android:layout_height">96px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#d2d2d2</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textColorHint">#b1b1b1</item>
+    </style>
+
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:textColor="#0f0f0f"-->
+    <!--android:layout_marginTop="34px"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:background="@drawable/bg_bt"-->
+
+    <style name="bg_bt_style">
+        <item name="android:layout_width">530px</item>
+        <item name="android:layout_marginTop">34px</item>
+        <item name="android:layout_height">96px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+    <!--android:id="@+id/bt_login_forget"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignLeft="@+id/bt_login_regsiter"-->
+    <!--android:layout_alignStart="@+id/bt_login_regsiter"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@null"-->
+    <!--android:text="忘记密码"-->
+    <!--android:textColor="@drawable/login_text_color"-->
+    <!--android:textSize="24sp-->
+
+
+    <style name="bg_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">35px</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignLeft="@+id/imageView2"-->
+    <!--android:layout_alignStart="@+id/imageView2"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/login_arrow"-->
+
+
+    <style name="bg_arrow_style">
+        <item name="android:layout_width">20px</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="bg_leftarrow_style">
+        <item name="android:layout_width">20px</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/login_leftarrow</item>
+    </style>
+
+    <style name="popupAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- NumberProgressBar进度条相关style -->
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">30px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">370px</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+
+    <style name="myDialogAnim" parent="android:Animation">
+
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="scener_ll_addmode">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_gravity">center|bottom</item>
+        <item name="android:gravity">center|bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0px</item>
+    </style>
+
+    <style name="seekbar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">80px</item>
+        <item name="android:layout_weight">330</item>
+        <item name="android:max">100</item>
+        <item name="android:maxHeight">12px</item>
+        <item name="android:minHeight">12px</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:progressDrawable">@drawable/po_seekbar</item>
+        <item name="android:thumb">@mipmap/img_seekbar_boll</item>
+        <item name="android:thumbOffset">10dp</item>
+    </style>
+
+    <style name="scener_parting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@mipmap/pop_scener_parting</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+
+</resources>

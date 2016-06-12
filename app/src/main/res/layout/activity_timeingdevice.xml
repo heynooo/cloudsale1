@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/base_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+
+    <com.vanhitech.vanhitech.SwipeMenulistview.PullToRefreshSwipeMenuListView
+        android:id="@+id/timeingdevice_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.vanhitech.vanhitech.SwipeMenulistview.PullToRefreshSwipeMenuListView>
+
+
+    <ImageView
+        android:id="@+id/sence_add"
+        android:layout_width="77px"
+        android:layout_height="77px"
+        android:layout_gravity="center"
+        android:src="@drawable/selector_btn_add_timer"/>
+
+
+</LinearLayout>

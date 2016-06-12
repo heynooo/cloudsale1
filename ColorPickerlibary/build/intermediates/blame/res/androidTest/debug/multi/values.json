@@ -1,0 +1,197 @@
+[
+    {
+        "outputFile": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 768,
+                    "endColumn": 42,
+                    "endOffset": 806
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 768,
+                        "endColumn": 42,
+                        "endOffset": 806
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 811,
+                    "endColumn": 54,
+                    "endOffset": 861
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 811,
+                        "endColumn": 54,
+                        "endOffset": 861
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 866,
+                    "endColumn": 48,
+                    "endOffset": 910
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 866,
+                        "endColumn": 48,
+                        "endOffset": 910
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 915,
+                    "endColumn": 43,
+                    "endOffset": 954
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 915,
+                        "endColumn": 43,
+                        "endOffset": 954
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 959,
+                    "endColumn": 54,
+                    "endOffset": 1009
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 959,
+                        "endColumn": 54,
+                        "endOffset": 1009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1014,
+                    "endColumn": 49,
+                    "endOffset": 1059
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1014,
+                        "endColumn": 49,
+                        "endOffset": 1059
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1064,
+                    "endColumn": 56,
+                    "endOffset": 1116
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1064,
+                        "endColumn": 56,
+                        "endOffset": 1116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1121,
+                    "endColumn": 50,
+                    "endOffset": 1167
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1121,
+                        "endColumn": 50,
+                        "endOffset": 1167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1172,
+                    "endColumn": 50,
+                    "endOffset": 1218
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1172,
+                        "endColumn": 50,
+                        "endOffset": 1218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1223,
+                    "endColumn": 51,
+                    "endOffset": 1270
+                },
+                "from": {
+                    "file": "E:\\0507\\cloudsale1\\ColorPickerlibary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1223,
+                        "endColumn": 51,
+                        "endOffset": 1270
+                    }
+                }
+            }
+        ]
+    }
+]

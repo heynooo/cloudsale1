@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:clipChildren="false"
+              android:fitsSystemWindows="true"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+        <!--android:paddingTop="15dp"-->
+        <!--android:fitsSystemWindows="true"-->
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:paddingTop="8dp"
+            android:id="@+id/base_ib_menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:gravity="center"
+            android:fitsSystemWindows="true"
+            android:layout_marginRight="21dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@drawable/login_text_color"
+            android:textSize="16dp"
+            android:text="" />
+
+        <TextView
+            android:fitsSystemWindows="true"
+            android:id="@+id/base_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+    <FrameLayout
+        android:background="#fff"
+        android:id="@+id/base_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

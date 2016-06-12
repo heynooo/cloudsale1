@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/base_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_gravity="center"
+        android:background="#39A1E8"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/im_1"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="300px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/im_2"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/im_3"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/im_4"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/im_5"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="180px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/im_6"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="240px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/rm_1"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="380px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/rm_2"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="440px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+
+        <ImageView
+            android:id="@+id/rm_3"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="500px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/rm_4"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="560px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/rm_5"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="620px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/rm_6"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="680px"
+            android:background="@drawable/img_curtain_leaf"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="80px"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_cuttain_close"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_curtain_close"
+                android:text=""
+                android:button="@null"/>
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curtain_close"
+                android:textColor="#BBC8D4"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cb_cuttain_open"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_curtain_open"
+                android:text=""
+                android:button="@null"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curtain_open"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <CheckBox
+            android:id="@+id/cb_cuttain_pause"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:background="@drawable/button_curtain_pause"
+            android:text=""
+            android:button="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/curtain_pause"
+            android:textColor="#BBC8D4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/cb_is_deviceinfo"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_info"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_timing"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/selector_btn_air_info"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                android:textColor="#BBC8D4"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="529px"
+              android:layout_height="782px"
+              android:layout_gravity="center"
+              android:background="@mipmap/pop_scener_air_bg"
+              android:orientation="vertical">
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="68px"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空调设备"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <!--cb-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="159px"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_open"
+                style="@style/scener_cb"
+                android:background="@drawable/light_scener_checkbox"
+                android:text="开"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_close"
+                style="@style/scener_cb"
+                android:text="关"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="529px"
+        android:layout_height="159px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100px"
+            android:layout_height="153px"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/scener_arror_temperature_l"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ll_mode"
+                android:background="@drawable/scener_arrow_left"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="318px"
+            android:layout_height="153px"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/scener_temperature_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26"
+                android:textColor="#39A1E8"
+                android:textSize="48px"
+                />
+
+            <TextView
+                android:id="@+id/scener_temperature_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="℃"
+                android:textColor="#39A1E8"
+                android:textSize="48px"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/scener_arror_temperature_r"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:background="@drawable/scener_arrow_right"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--模式    -->
+
+    <LinearLayout
+        android:layout_width="529px"
+        android:layout_height="110px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/scener_tv"
+            android:text="模式"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/scener_arror_mode_l"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ll_mode"
+                android:background="@drawable/scener_arrow_left"
+                />
+
+
+            <TextView
+                android:id="@+id/scener_arror_mode_tv"
+                style="@style/scener_tv"
+                android:layout_width="101px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="制冷"
+                android:textColor="#39A1E8"
+                />
+
+            <Button
+                android:id="@+id/scener_arror_mode_r"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/scener_tv_mode"
+                android:background="@drawable/scener_arrow_right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--风速    -->
+
+    <LinearLayout
+        android:layout_width="529px"
+        android:layout_height="110px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/scener_tv"
+            android:text="风速"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/scener_air_wind_l"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ll_mode"
+                android:background="@drawable/scener_arrow_left"
+                />
+
+
+            <TextView
+                android:id="@+id/scener_air_wind_tv"
+                style="@style/scener_tv"
+                android:layout_width="101px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/scener_arror_l"
+                android:text="中"
+                android:textColor="#39A1E8"
+                />
+
+            <Button
+                android:id="@+id/scener_air_wind_r"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/scener_tv_mode"
+                android:background="@drawable/scener_arrow_right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--摆风-->
+    <LinearLayout
+        android:layout_width="529px"
+        android:layout_height="110px"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/scener_tv"
+            android:text="摆风"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/scener_air_movewind_l"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ll_mode"
+                android:background="@drawable/scener_arrow_left"
+                />
+
+            <TextView
+                android:id="@+id/scener_air_movewind_tv"
+                style="@style/scener_tv"
+                android:layout_width="101px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/scener_arror_l"
+                android:text="左右"
+                android:textColor="#39A1E8"
+                />
+
+
+            <Button
+                android:id="@+id/scener_air_movewind_r"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/scener_tv_mode"
+                android:background="@drawable/scener_arrow_right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--保存取消-->
+    <LinearLayout
+        android:layout_marginTop="5px"
+        android:layout_width="529px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="265px"
+            android:layout_height="86px"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/scener_air_cancel"
+                android:text="取消"
+                android:gravity="center"
+                android:layout_width="265px"
+                android:layout_height="96px"
+                android:textSize="30px"
+                android:background="@drawable/selector_delete_dialog_left"
+                android:textColor="@drawable/selector_dialog_text"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="260px"
+            android:layout_height="86px"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/scener_air_save"
+                android:text="保存"
+                android:gravity="center"
+                android:layout_width="260px"
+                android:layout_height="96px"
+                android:textSize="30px"
+                android:background="@drawable/selector_delete_dialog_right"
+                android:textColor="@drawable/selector_dialog_text"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

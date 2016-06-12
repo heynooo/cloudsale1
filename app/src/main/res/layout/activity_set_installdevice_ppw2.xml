@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rel_board"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:layout_gravity="center"
+              android:orientation="vertical"
+    >
+
+
+<RelativeLayout
+    android:layout_marginLeft="92px"
+    android:layout_marginRight="92px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="228px"
+        android:id="@+id/a"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/btn_router_pwd"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/img_config_bubble_up"
+            android:clickable="false"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入\n路由器密码"
+            android:textColor="#ffffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <!--输入密码-->
+    <RelativeLayout
+        android:layout_below="@id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:id="@+id/set_et_password1"
+            style="@style/editText_update_set"
+            android:password="true"
+            />
+
+        <CheckBox
+            android:layout_margin="15px"
+            android:id="@+id/cb_is_visible1"
+            android:layout_alignBottom="@+id/set_et_password1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/set_et_password1"
+            android:layout_alignRight="@+id/set_et_password1"
+            android:background="@drawable/regsiter_checkbox"
+            android:button="@null"/>
+    </RelativeLayout>
+
+    <!--下一步-->
+<LinearLayout
+    android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/tv_config_next_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/img_config_flash_btn"
+        android:gravity="center"
+        android:text="下一步"
+        android:layout_margin="20dp"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp"/>
+</LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

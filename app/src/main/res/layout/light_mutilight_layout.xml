@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F0F0F0"
+              android:orientation="vertical">
+    <!--彩色灯 -->
+
+    <!--彩色盘+亮度-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@mipmap/rgblight_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--帧布局彩色盘-->
+            <FrameLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/rgblight_open"
+                    />
+                    <CheckBox
+                        android:button="@null"
+                        android:background="@drawable/rgblight_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text=" 速度 "
+                android:layout_width="70dp"
+                android:textSize="15dp"
+                style="@style/text_help"
+                />
+
+            <com.vanhitech.vanhitech.views.NumberSeekBar
+                android:id="@+id/bar1"
+                style="@style/NumberProgressBar_Default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:max="100"
+                android:thumb="@drawable/thumb_bar"
+                android:progressDrawable="@drawable/numberseekbar_background"
+                />
+            <!-- padding设置无效需要在代码中设置 -->
+
+        </LinearLayout>
+
+
+        <!--自定义进度条-->
+    </LinearLayout>
+
+    <!--模式速度-->
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:background="@mipmap/statebackground"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="模式1"
+            android:textColor="#fff"
+            android:background="@drawable/light_bt_state"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="模式速度"
+                android:layout_width="70dp"
+                android:textSize="15dp"
+                style="@style/text_help"
+                />
+
+            <com.vanhitech.vanhitech.views.NumberSeekBar
+                android:id="@+id/bar0"
+                style="@style/NumberProgressBar_Default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:max="100"
+                android:thumb="@drawable/thumb_bar"
+                android:progressDrawable="@drawable/numberseekbar_background"
+                />
+            <!-- padding设置无效需要在代码中设置 -->
+
+        </LinearLayout>
+
+
+
+        <!--自定义进度条-->
+    </LinearLayout>
+
+    <!--按键-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_timing"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_deviceinfo"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_info"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

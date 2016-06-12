@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<CheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scener_cb_open"
+    style="@style/scener_cb"
+    android:background="@drawable/light_scener_checkbox"
+    android:text="开"
+    tools:showIn="@layout/pop_scener_cwdevier"/>

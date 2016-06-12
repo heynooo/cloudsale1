@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="522px"
+              android:layout_height="313px"
+              android:layout_gravity="center"
+              android:background="@mipmap/pop_scener_openclose_bg"
+              android:orientation="vertical">
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="65px"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="插座,灯控盒"
+            />
+    </LinearLayout>
+    <!--cb-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="160px"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_open"
+                style="@style/scener_cb"
+                android:background="@drawable/light_scener_checkbox"
+                android:text="开"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_close"
+                style="@style/scener_cb"
+                android:text="关"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--521px-->
+    <!--保存取消-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="96px"
+            android:gravity="center">
+
+            <TextView
+                style="@style/scener_tv"
+                android:text="取消"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="96px"
+            android:gravity="center">
+
+            <TextView
+                style="@style/scener_tv"
+                android:text="保存"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

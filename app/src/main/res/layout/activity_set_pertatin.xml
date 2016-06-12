@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/base_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+    <LinearLayout
+        android:id="@+id/pertatin_ll_test"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/mac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26px"
+        android:text="device_id,your_device_id,mac,your_device_mac"
+        android:textColor="#49a7e9"/>
+
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#49a7e9"
+        android:text="复制"/>
+    </LinearLayout>
+</LinearLayout>

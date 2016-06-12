@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:music="http://schemas.android.com/apk/res/com.vanhitech.vanhitech"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/electricity"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前电量"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_els"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="0.0kwh"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <com.vanhitech.vanhitech.views.view_music.MusicView
+
+            android:id="@+id/music_yellow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="345"
+            android:background="#fff" 
+          music:itemNum="12"
+            music:itemWidth="7dp"
+            music:musicColor="#ffffb844"
+            music:musicType="RECT"
+            music:randColor="false" 
+            /> 
+            
+           
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/power"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前功率"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/tv_pow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="100w"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <com.vanhitech.vanhitech.views.view_music.MusicView
+            android:id="@+id/music_green"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="345"
+            android:background="#fff"
+            music:itemNum="12"
+            music:itemWidth="7dp"
+            music:musicColor="#ff3fcaa9"
+            music:musicType="RECT"
+            music:randColor="false" 
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/current"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前电流"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/tv_ec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="16A"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <com.vanhitech.vanhitech.views.view_music.MusicView
+            android:id="@+id/music_blue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="345"
+            android:background="#fff"
+           music:itemNum="12"
+            music:itemWidth="7dp"
+            music:musicColor="#ff39a1e8"
+            music:musicType="RECT"
+            music:randColor="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/voltage"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前电压"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/tv_ev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="220V"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <com.vanhitech.vanhitech.views.view_music.MusicView
+            android:id="@+id/music_red"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="345"
+            android:background="#fff"
+          music:itemNum="12"
+            music:itemWidth="7dp"
+            music:musicColor="#fffe4d67"
+            music:musicType="RECT"
+            music:randColor="false" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/base_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="#f0f0f0"
+    >
+
+
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!--标签-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="839px"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="31px"
+        >
+        <!--开关-->
+        <LinearLayout
+            android:layout_width="665px"
+            android:layout_height="804px"
+            android:layout_marginLeft="27px"
+            android:layout_marginRight="27px"
+            android:background="@mipmap/rgblight_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/cb_is_switch"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:background="@drawable/lightwhite_openclose_checkbox"
+                    android:button="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLightLimit"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="18dp">
+
+                <LinearLayout
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/text_help"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="42px"
+                        android:background="@null"
+                        android:text="@string/bright"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="90px">
+
+                    <SeekBar
+                        android:id="@+id/LightLimitBar"
+                        style="@style/seekbar"/>
+                </LinearLayout>
+                <!--<com.vanhitech.vanhitech.views.NumberSeekBar-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:id="@+id/LightLimitBar"-->
+                <!--style="@style/NumberProgressBar_Default"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:focusable="false"-->
+                <!--android:max="15"-->
+                <!--android:thumb="@drawable/thumb_bar"-->
+                <!--android:progressDrawable="@drawable/numberseekbar_background"-->
+                <!--/>-->
+                <!-- padding设置无效需要在代码中设置 -->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutLightPace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/text_help"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="42px"
+                        android:background="@null"
+                        android:text="@string/colortemp"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="90px">
+
+                    <SeekBar
+                        android:id="@+id/LightPaceBar"
+                        style="@style/seekbar"/>
+                </LinearLayout>
+
+                <!--<com.vanhitech.vanhitech.views.NumberSeekBar-->
+
+                <!--android:id="@+id/LightPaceBar"-->
+                <!--style="@style/NumberProgressBar_Default"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:focusable="false"-->
+                <!--android:max="127"-->
+                <!--android:thumb="@drawable/thumb_bar"-->
+                <!--android:progressDrawable="@drawable/numberseekbar_background"-->
+                <!--/>-->
+                <!--自定义进度条-->
+            </LinearLayout>
+        </LinearLayout>
+        <!--自定义进度条-->
+    </LinearLayout>
+
+
+    <!--按键-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="203px"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="128px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/cb_is_remote_control"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/selector_btn_light_remote_control"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_remote_control"
+                android:textColor="#BBC8D4"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_timing"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+        <!--模式速度-->
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/cb_is_deviceinfo"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_mode_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_info"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

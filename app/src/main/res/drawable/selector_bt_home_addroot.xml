@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中时候的效果 -->
+    <item android:drawable="@mipmap/addroot_press"  android:state_selected="true" ></item>
+    <item android:drawable="@mipmap/addroot_press" android:state_focused="true"></item>
+    <item android:drawable="@mipmap/addroot_press" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/addroot"></item>
+
+</selector>

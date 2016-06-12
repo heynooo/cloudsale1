@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/base_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f0f0f0"
+    >
+
+
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!--标签-->
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+    <RelativeLayout
+        android:id="@+id/item_homelist"
+        android:layout_gravity="center"
+        android:layout_width="654px"
+        android:layout_height="131px"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/item_listview_home"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginRight="15px"
+            android:layout_margin="17px"
+            android:id="@+id/item_homelist_icon"
+            android:layout_width="98px"
+            android:layout_height="98px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/item_homelist_icon"
+            android:layout_toRightOf="@+id/item_homelist_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_homelist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="添加的设备名字"
+                android:textColor="#b1b1b1"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/item_homelist_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.5dp"
+                android:layout_marginBottom="5.5dp"
+                android:text="SN"
+                android:textColor="#d2d2d2"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="13dp"
+        android:text="2.4G下挂在"
+        android:textColor="#b1b1b1"
+        android:textSize="18dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/item_homelist_control"
+        android:layout_gravity="center"
+        android:layout_width="656px"
+        android:layout_height="140px"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/item_listview_home"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_homelist_icon_control"
+            android:layout_width="98px"
+            android:layout_height="98px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15px"
+            android:layout_margin="17px"
+            android:background="@mipmap/devicedefault"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/item_homelist_icon_control"
+            android:layout_toRightOf="@+id/item_homelist_icon_control"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_homelist_name_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="控制中心"
+                android:textColor="#b1b1b1"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/item_homelist_status_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.5dp"
+                android:layout_marginBottom="5.5dp"
+                android:text="房间名字"
+                android:textColor="#d2d2d2"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_gdevice_add"
+        style="@style/bg_bt_style"
+        android:layout_marginTop="36dp"
+        android:textSize="18dp"
+        android:background="@drawable/bg_bt"
+        android:text="添加"/>
+
+
+</LinearLayout>

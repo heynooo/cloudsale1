@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--选中的时候效果-->
+    <item android:state_selected="true" android:drawable="@drawable/scene_btn_down" />
+    <item android:state_selected="false" android:drawable="@drawable/scene_btn_normal" />
+
+    <!--默认的时候效果-->
+    <item android:drawable="@drawable/scene_btn_normal" />
+
+</selector>

@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="655px"
+              android:layout_height="431px"
+              android:layout_gravity=""
+              android:layout_margin="18dp"
+              android:clipChildren="false"
+              android:orientation="vertical"
+    >
+    <!--android:background="@mipmap/home_viewpagerroom"-->
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="645px"
+        android:layout_height="334px"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+
+            android:id="@+id/homelist_pager_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/roottemp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/home_room_name"
+        android:layout_width="655px"
+        android:layout_height="101px"
+        android:layout_weight="1"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="10px"
+                android:id="@+id/left_room_info"
+                android:layout_width="68px"
+                android:layout_height="68px"
+                android:layout_gravity="right|center"
+
+                android:background="@drawable/selector_bt_home_reviseroot"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/home_pager_title"
+                android:layout_width="wrap_content"
+                android:layout_height="101px"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="设备"
+                android:textColor="#b1b1b1"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/right_room_add"
+                android:layout_width="68px"
+                android:layout_height="68px"
+                android:layout_gravity="left|center"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/selector_bt_home_addroot"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"-->
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F0F0EF"
+              android:orientation="vertical">
+
+    <com.vanhitech.vanhitech.views.NoScrollViewPager
+        android:id="@+id/content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+    </com.vanhitech.vanhitech.views.NoScrollViewPager>
+
+        <!--android:background="#F5F4F4"-->
+
+    <RadioGroup
+        android:background="@drawable/toolcolumn"
+        android:id="@+id/content_rg"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+            <RadioButton
+                android:layout_gravity="center"
+                android:id="@+id/content_rb_home"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginStart="42dp"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_rb_home"
+                android:text="首页"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+
+
+            <RadioButton
+                android:id="@+id/content_rb_scener"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="89dp"
+                android:layout_toRightOf="@+id/content_rb_home"
+                android:layout_toEndOf="@+id/content_rb_home"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_rb_scener"
+                android:text="场景"/>
+
+
+
+        <RadioButton
+            android:id="@+id/content_rb_setting"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_rb_setting"
+            android:gravity="center"
+            android:text="设置"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/content_rb_scener"
+            android:layout_marginStart="90dp"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

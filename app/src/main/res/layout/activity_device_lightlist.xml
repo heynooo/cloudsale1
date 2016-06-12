@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/base_activity"
+              android:background="#f0f0f0"
+              >
+
+
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!--标签-->
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+   <LinearLayout
+       android:paddingTop="31px"
+       android:layout_width="665px"
+       android:layout_height="839px"
+       android:layout_marginLeft="27px"
+       android:layout_marginRight="27px"
+       android:orientation="vertical"
+        android:layout_gravity="center"
+       >
+<!--开关-->
+       <LinearLayout
+           android:orientation="vertical"
+           android:background="@null"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+             <ListView
+                 android:id="@+id/lv_deviceMsg"
+                 android:layout_width="match_parent"
+                 android:dividerHeight="5dp"
+                 android:layout_height="match_parent">
+             </ListView>
+
+
+   </LinearLayout>
+        <!--自定义进度条-->
+    </LinearLayout>
+
+
+    <!--按键-->
+    <LinearLayout
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:layout_marginTop="138px"
+        android:layout_width="match_parent"
+        android:layout_height="206px"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:weightSum="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_remote_control"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/selector_btn_light_remote_control"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BBC8D4"
+                android:text="@string/device_remote_control"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_timing"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/light_timing_checkbox"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                android:textColor="#BBC8D4"
+                />
+
+        </LinearLayout>
+        <!--模式速度-->
+
+
+        <LinearLayout
+
+            android:weightSum="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_is_deviceinfo"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignBottom="@+id/login_et_password"
+                android:layout_alignEnd="@+id/login_et_password"
+                android:layout_alignRight="@+id/login_et_password"
+                android:background="@drawable/selector_btn_air_info"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BBC8D4"
+                android:text="@string/device_info"
+                />
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/base_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <!-- 标题栏 -->
+    <include layout="@layout/base_ativity_head"/>
+    <!-- 具体的内容,但是现在不知道是什么,所以先定义一个容器 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <EditText
+            android:id="@+id/scener_space_name"
+            style="@style/editText_update_set"
+            android:layout_weight="3"
+            android:hint="自定义房间名称"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30px"
+        android:layout_width="720px"
+        android:layout_height="450px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="720px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <!--运动-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_sports_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_sports"
+                    android:button="@null"/>
+            </LinearLayout>
+
+            <!--回家模式-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_gohome_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_gohome"
+                    android:button="@null"/>
+            </LinearLayout>
+
+            <!--离家-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_leavehome_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_leavehome"
+                    android:button="@null"/>
+            </LinearLayout>
+
+
+            <!--女士-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_lady_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_lady"
+                    android:button="@null"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--第二层-->
+
+        <LinearLayout
+            android:layout_width="720px"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+            <!--电影-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_movie_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_movie"
+                    android:button="@null"/>
+            </LinearLayout>
+
+            <!--睡觉-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_sleep_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_sleep"
+                    android:button="@null"/>
+            </LinearLayout>
+
+
+            <!--吃饭-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_eat_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_eat"
+                    android:button="@null"/>
+            </LinearLayout>
+
+
+            <!--交流-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_receive_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_receive"
+                    android:button="@null"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="720px"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+            <!--打扫-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_clean_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_clean"
+                    android:button="@null"/>
+
+            </LinearLayout>
+            <!--派对-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_meet_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_meet"
+                    android:button="@null"/>
+
+            </LinearLayout>
+
+            <!--阅读-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_read_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_read"
+                    android:button="@null"/>
+
+            </LinearLayout>
+
+            <!--音乐-->
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="150px"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/scener_music_cb"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/scener_music"
+                    android:button="@null"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="527px"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_help"
+            android:text=""
+            />
+
+        <Button
+            android:id="@+id/scemer_btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="101px"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_bt"
+            android:text="保存"
+            android:textColor="#fff"
+            android:textSize="35px"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

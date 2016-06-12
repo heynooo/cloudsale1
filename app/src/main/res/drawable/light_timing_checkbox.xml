@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--定时
+
+ <item android:drawable="@drawable/btn_light_remote_control_press" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_light_remote_control"/>
+
+
+-->
+    <item android:state_enabled="true"  android:state_pressed="true" android:drawable="@mipmap/timingno" /> <!-- checked -->
+
+
+    <item  android:drawable="@mipmap/timing" /> <!-- default -->
+
+
+</selector>

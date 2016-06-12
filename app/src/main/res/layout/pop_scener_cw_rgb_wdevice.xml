@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="521px"
+              android:layout_height="790px"
+              android:layout_gravity="center"
+              android:background="@mipmap/pop_scener_power_cw_rgb_flase"
+              android:orientation="vertical">
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="65px"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RGB+CW设备"
+            />
+    </LinearLayout>
+    <!--cb-->
+    <LinearLayout
+        android:id="@+id/scener_ll_colour"
+        android:layout_width="521px"
+        android:layout_height="160px"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_color"
+                style="@style/scener_cb"
+                android:background="@drawable/light_scener_checkbox"
+                android:text="彩色"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_white"
+                style="@style/scener_cb"
+                android:text="暖白"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scener_ll_openclose"
+        android:layout_width="521px"
+        android:layout_height="180px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_open"
+                style="@style/scener_cb"
+                android:background="@drawable/light_scener_checkbox"
+                android:text="开"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="132px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_close"
+                style="@style/scener_cb"
+                android:text="关"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--亮度-->
+    <LinearLayout
+        android:id="@+id/scener_ll_brightness"
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="111px"
+            android:layout_height="96px"
+            android:gravity="center"
+            android:text="亮度"
+            android:textColor="#AEBECC"
+            android:textSize="30px"/>
+
+        <SeekBar
+            android:id="@+id/seek_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="330"
+            android:max="100"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@mipmap/img_seekbar_boll"
+            android:thumbOffset="10dp"/>
+
+    </LinearLayout>
+
+    <!--模式-->
+    <LinearLayout
+        android:id="@+id/scener_ll_mode"
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/scener_tv"
+            android:text="模式"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+
+            <LinearLayout
+                android:id="@+id/ll_mode"
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/scener_arror_l"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ll_mode"
+                android:background="@drawable/scener_arrow_left"
+
+                />
+
+            <TextView
+                android:id="@+id/scener_tv_mode"
+                style="@style/scener_tv"
+                android:layout_width="101px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/scener_arror_l"
+                android:text="1"
+                />
+
+            <Button
+                android:id="@+id/scener_arror_r"
+                android:layout_width="19px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/scener_arrow_right"
+                android:layout_toRightOf="@+id/scener_tv_mode">
+            </Button>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--模式-->
+    <LinearLayout
+        android:id="@+id/scener_ll_speed"
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/scener_tv"
+            android:text="速度"
+            />
+
+        <SeekBar
+            android:id="@+id/seek_color_temp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="330"
+            android:max="100"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@mipmap/img_seekbar_boll"
+            android:thumbOffset="10dp"/>
+    </LinearLayout>
+    <!--保存取消-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="96px"
+            android:gravity="center">
+
+            <TextView
+                style="@style/scener_tv"
+                android:text="取消"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="96px"
+            android:gravity="center">
+
+            <TextView
+                style="@style/scener_tv"
+                android:text="保存"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/item_homelist"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_marginTop="35px"
+              android:layout_marginLeft="35px"
+              android:layout_marginRight="35px"
+              android:background="@mipmap/item_listview_home"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="136px"
+        android:layout_height="142px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="15px">
+
+        <ImageView
+            android:id="@+id/item_homelist_icon"
+            android:layout_width="95px"
+            android:layout_height="95px"
+            android:layout_centerVertical="true"
+            android:layout_margin="23px"
+            android:background="@null"
+            android:padding="2px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_2"
+        android:layout_width="414px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/item_homelist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:singleLine="true"
+            android:text="名字"
+            android:textColor="#b1b1b1"
+            android:textSize="36px"
+            />
+
+        <TextView
+            android:id="@+id/item_homelist_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.5dp"
+            android:text="在线状态"
+            android:textColor="#d2d2d2"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100px"
+        android:layout_height="125px"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center|right">
+
+        <ImageView
+            android:id="@+id/item_arrow"
+            android:layout_width="19px"
+            android:layout_height="37px"
+            android:layout_gravity="center"
+            android:layout_margin="37px"
+            android:background="@mipmap/btn_list_right_arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>

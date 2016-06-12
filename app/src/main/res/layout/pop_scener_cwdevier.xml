@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="518px"
+              android:layout_height="487px"
+              android:layout_gravity="center"
+              android:background="@mipmap/pop_scener_cwdevier_bg"
+              android:orientation="vertical">
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="68px"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空调设备"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/scener_cb_open"
+                style="@style/scener_cb"
+                android:background="@drawable/light_scener_checkbox"
+                android:text="开"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="150px"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/scener_cb_close"
+                style="@style/scener_cb"
+                android:text="关"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="111px"
+            android:layout_height="96px"
+            android:gravity="center"
+            android:text="亮度"
+            android:textColor="#AEBECC"
+            android:textSize="30px"/>
+
+        <SeekBar
+            android:id="@+id/seek_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="330"
+            android:max="100"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@mipmap/img_seekbar_boll"
+            android:thumbOffset="10dp"/>
+
+    </LinearLayout>
+
+    <!--色温-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/scener_tv"
+            android:text="色温"
+            />
+
+        <SeekBar
+            android:id="@+id/seek_color_temp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="330"
+            android:max="100"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@mipmap/img_seekbar_boll"
+            android:thumbOffset="10dp"/>
+    </LinearLayout>
+
+    <!--保存取消-->
+    <LinearLayout
+        android:layout_width="521px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="96px"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/scener_tv_cancel"
+                style="@style/scener_tv"
+                android:text="取消"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="258px"
+            android:layout_height="96px"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/scener_tv_save"
+                style="@style/scener_tv"
+                android:text="保存"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

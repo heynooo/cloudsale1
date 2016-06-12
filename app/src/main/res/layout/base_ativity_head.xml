@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/base_title"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:background="@drawable/title_bg"
+    tools:showIn="@layout/layout_base_activity">
+
+    <include layout="@layout/base_ativity_button_right" android:background="@drawable/login_leftarrow"/>
+
+    <include layout="@layout/base_ativity_button_left"/>
+
+    <include layout="@layout/base_ativity_title"/>
+</RelativeLayout>
+    <!--android:paddingTop="15dp"-->

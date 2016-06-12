@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/scener_mode_list"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="654px"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="39px"
+              android:layout_marginRight="30px"
+              android:layout_marginTop="35px"
+
+              android:gravity="center"
+              android:orientation="vertical">
+
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@mipmap/item_listview_home"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="129px"
+        android:layout_height="131px"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/scener_mode_icon"
+            android:layout_marginLeft="29px"
+            android:layout_width="94px"
+            android:layout_height="94px"
+            android:background="@drawable/scener_sports_checked"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="25px"
+        android:layout_width="167px"
+        android:layout_height="131px"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/scener_mode_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动模式"
+            android:textColor="#AEBECC"
+            android:textSize="38px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200px"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="121px"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:id="@+id/scener_item_arrow"
+            android:layout_width="20px"
+            android:layout_height="38px"
+            android:visibility="invisible"
+            android:background="@mipmap/btn_list_right_arrow"/>
+        <ImageView
+            android:layout_marginTop="30px"
+            android:layout_marginRight="20px"
+            android:id="@+id/scener_item_button"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:background="@drawable/scener_bt"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+        <!--android:visibility="gone"-->
+    <Button
+        android:layout_marginTop="53px"
+        android:layout_gravity="center"
+        android:id="@+id/scener_addmode_bt"
+        android:layout_width="77px"
+        android:layout_height="77px"
+        android:focusable="false"
+        android:background="@drawable/selector_btn_add_timer"/>
+</LinearLayout>

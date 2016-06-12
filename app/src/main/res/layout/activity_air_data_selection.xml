@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="9.2"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/base_ativity_head"/>
+    <RelativeLayout
+        android:id="@+id/select_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/air_data_layout"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/select_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/price_layout"/>
+    </RelativeLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@mipmap/img_air_main_divider"
+        />
+   <LinearLayout
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:background="#fafafa"
+       android:layout_weight="0.8">
+       <RelativeLayout
+           android:id="@+id/air_dataR"
+           android:layout_width="0dp"
+
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+           <Button
+               android:id="@+id/air_dataB"
+               android:layout_width="71px"
+               android:layout_height="71px"
+               android:layout_centerInParent="true"
+               android:background="@drawable/air_data"
+               />
+       </RelativeLayout>
+       <RelativeLayout
+           android:id="@+id/air_priceR"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+           <Button
+               android:id="@+id/air_priceB"
+               android:layout_width="71px"
+               android:layout_height="71px"
+               android:layout_centerInParent="true"
+               android:background="@drawable/air_price"
+               />
+       </RelativeLayout>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="669"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35" />
+
+        <LinearLayout
+            android:id="@+id/ll_cost"
+            android:layout_width="536px"
+            android:layout_height="110px"
+            android:background="@drawable/price_input"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_one_cost"
+                android:layout_width="500px"
+                android:layout_height="110px"
+                android:background="@null"
+                android:singleLine="true"
+                android:digits="1234567890."
+				android:inputType="number"		
+                android:maxLength="18"
+                android:textColor="#A2A2A2"
+                android:textColorHint="#E2E2E2"
+                android:hint="当地一度电费用"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:layout_width="36px"
+                android:layout_height="110px"
+                android:text="¥"
+                android:gravity="center"
+                android:textColor="#A2A2A2"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="502px"
+            >
+
+            <ImageButton
+                android:layout_width="502px"
+                android:layout_height="502px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/cost_fill" />
+
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="#A2A2A2"
+                android:textSize="45sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_cost"
+                android:textColor="#A2A2A2"
+                android:text="¥"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:gravity="bottom|center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累积花费"
+                android:textColor="#AEBECC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="190" />
+    </LinearLayout>
+
+</LinearLayout>
